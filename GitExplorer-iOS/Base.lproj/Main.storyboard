@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,139 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GitExplorer_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Yh-lk-k62">
+                                <rect key="frame" x="74" y="55" width="323" height="283.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Git Command Explorer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8e-Og-kVY" userLabel="header">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.027450980392156862" green="0.75294117647058822" blue="0.66274509803921566" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find right command you need without digging through the internet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9qp-1B-9uJ" userLabel="subHeader">
+                                        <rect key="frame" x="0.0" y="56" width="323" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.12549019607843137" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want to:" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BK0-oY-MCa" userLabel="title">
+                                        <rect key="frame" x="0.0" y="117" width="323" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.027450980392156862" green="0.75294117647058822" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWa-b5-Kjo" userLabel="primaryLabel" customClass="ZHSelectView" customModule="GitExplorer_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="163.5" width="323" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="labelTxt" value="Primary"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgM-2g-aA2" userLabel="secondaryLabel" customClass="ZHSelectView" customModule="GitExplorer_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="233.5" width="323" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="labelTxt" value="Secondary"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xkd-iZ-8hC">
+                                <rect key="frame" x="499" y="79.5" width="323" height="234"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usage" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6s-xf-Bxp" userLabel="usageLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="323" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.12549019607843137" green="0.14901960784313725" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxm-aV-7t7" userLabel="usage" customClass="ZHInfoView" customModule="GitExplorer_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="46.5" width="323" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="infoText" value="git"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rB5-x2-4lV" userLabel="noteLabel">
+                                        <rect key="frame" x="0.0" y="127" width="323" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <color key="textColor" red="0.12549019610000001" green="0.14901960780000001" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-gT-87J" userLabel="note" customClass="ZHInfoView" customModule="GitExplorer_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="173.5" width="323" height="60.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="infoText" value="git"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jxm-aV-7t7" firstAttribute="leading" secondItem="xkd-iZ-8hC" secondAttribute="leadingMargin" id="akd-jP-OuJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="8Yh-lk-k62" secondAttribute="bottom" priority="999" constant="20" id="7Ss-DY-Kvg"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="30" id="GI9-Nm-kEL"/>
+                            <constraint firstItem="8Yh-lk-k62" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="IsH-yu-B5p"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="PTJ-Tg-VxL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xkd-iZ-8hC" secondAttribute="trailing" constant="30" id="PUb-US-0qH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Yh-lk-k62" secondAttribute="trailing" constant="30" id="Zf0-nC-hmX"/>
+                            <constraint firstItem="8Yh-lk-k62" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="c71-ii-Mrz"/>
+                            <constraint firstItem="8Yh-lk-k62" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" priority="999" constant="20" id="d3M-yW-UMm"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="e9a-9s-WRo"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="top" secondItem="8Yh-lk-k62" secondAttribute="bottom" constant="50" id="g1v-ZB-4en"/>
+                            <constraint firstItem="8Yh-lk-k62" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="iv5-1R-EWY"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.4" id="k14-sr-NOL"/>
+                            <constraint firstItem="8Yh-lk-k62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="khD-bc-qVO"/>
+                            <constraint firstItem="xkd-iZ-8hC" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="bottom" priority="999" constant="30" id="tv0-KC-YZU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7Ss-DY-Kvg"/>
+                                <exclude reference="IsH-yu-B5p"/>
+                                <exclude reference="c71-ii-Mrz"/>
+                                <exclude reference="d3M-yW-UMm"/>
+                                <exclude reference="GI9-Nm-kEL"/>
+                                <exclude reference="e9a-9s-WRo"/>
+                                <exclude reference="k14-sr-NOL"/>
+                                <exclude reference="tv0-KC-YZU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="7Ss-DY-Kvg"/>
+                                <exclude reference="Zf0-nC-hmX"/>
+                                <include reference="IsH-yu-B5p"/>
+                                <include reference="c71-ii-Mrz"/>
+                                <include reference="d3M-yW-UMm"/>
+                                <exclude reference="iv5-1R-EWY"/>
+                                <include reference="GI9-Nm-kEL"/>
+                                <exclude reference="PTJ-Tg-VxL"/>
+                                <include reference="e9a-9s-WRo"/>
+                                <exclude reference="g1v-ZB-4en"/>
+                                <include reference="k14-sr-NOL"/>
+                                <include reference="tv0-KC-YZU"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="inputStack" destination="8Yh-lk-k62" id="9pr-BH-RiQ"/>
+                        <outlet property="subHeaderLabel" destination="9qp-1B-9uJ" id="k4o-gu-XtU"/>
+                        <outlet property="titleLabel" destination="BK0-oY-MCa" id="SRX-qK-XXV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="113" y="114"/>
         </scene>
     </scenes>
 </document>
