@@ -136,8 +136,12 @@
                     </view>
                     <connections>
                         <outlet property="inputStack" destination="8Yh-lk-k62" id="9pr-BH-RiQ"/>
+                        <outlet property="noteInfo" destination="eeS-gT-87J" id="QEp-5F-XEt"/>
+                        <outlet property="primarySelect" destination="LWa-b5-Kjo" id="7yq-Hb-vnD"/>
+                        <outlet property="secondarySelect" destination="WgM-2g-aA2" id="kcP-1q-kvX"/>
                         <outlet property="subHeaderLabel" destination="9qp-1B-9uJ" id="k4o-gu-XtU"/>
                         <outlet property="titleLabel" destination="BK0-oY-MCa" id="SRX-qK-XXV"/>
+                        <outlet property="usageInfo" destination="jxm-aV-7t7" id="UxH-ES-L92"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
