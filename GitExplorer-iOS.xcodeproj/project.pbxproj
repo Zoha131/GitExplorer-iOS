@@ -32,6 +32,7 @@
 		894FB0A8249F04F3008A0D83 /* ZHSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHSelectView.swift; sourceTree = "<group>"; };
 		89562E6024A040EE002F9785 /* ZHColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHColor.swift; sourceTree = "<group>"; };
 		89562E6224A05B7C002F9785 /* ZHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHTextField.swift; sourceTree = "<group>"; };
+		89562E6524A07864002F9785 /* git_command_explorer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = git_command_explorer.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +65,7 @@
 		894FB092249EF5EE008A0D83 /* GitExplorer-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				89562E6424A0783B002F9785 /* data */,
 				894FB0A7249F0225008A0D83 /* view */,
 				894FB093249EF5EE008A0D83 /* AppDelegate.swift */,
 				894FB095249EF5EE008A0D83 /* SceneDelegate.swift */,
@@ -85,6 +87,14 @@
 				89562E6224A05B7C002F9785 /* ZHTextField.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		89562E6424A0783B002F9785 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				89562E6524A07864002F9785 /* git_command_explorer.json */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
