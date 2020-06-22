@@ -14,8 +14,6 @@ class ZHSelectView: UIView {
   let imageView = UIImageView()
   let labelView = UILabel()
   
-  let themeBg = UIColor(red: 32/255.0, green: 38/255.0, blue: 44/255.0, alpha: 1.0)
-  
   @IBInspectable var labelTxt: String = "" {
     didSet {
       labelView.text = labelTxt
@@ -42,7 +40,7 @@ class ZHSelectView: UIView {
     
     imageView.image = UIImage(systemName: "arrowtriangle.down")
     
-    labelView.textColor = themeBg
+    labelView.textColor = secondaryColor
     
     labelView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     labelView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
@@ -57,7 +55,7 @@ class ZHSelectView: UIView {
     backgroundColor = .systemGray6
     layer.cornerRadius = 8
     
-    layer.shadowColor = themeBg.cgColor
+    layer.shadowColor = secondaryColor.cgColor
     layer.shadowOpacity = 0.2
     layer.shadowRadius = 4
     layer.shadowOffset = CGSize.zero

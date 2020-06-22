@@ -56,9 +56,9 @@ class ZHInfoView: UIView {
     labelView.numberOfLines = 10
     labelView.textColor = .white
     
-    leftView.backgroundColor = UIColor(red: 7/255.0, green: 192/255.0, blue: 169/255.0, alpha: 1.0)
+    leftView.backgroundColor = primaryColor
     
-    backgroundColor = UIColor(red: 32/255.0, green: 38/255.0, blue: 44/255.0, alpha: 1.0)
+    backgroundColor = secondaryColor
     layer.cornerRadius = 8
     clipsToBounds = true
     
