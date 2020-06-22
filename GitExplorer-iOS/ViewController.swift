@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
+    Repository.shared.generateData()
+    
     inputStack.setCustomSpacing(30, after: subHeaderLabel)
     infoStack.setCustomSpacing(20, after: usageInfo)
     
@@ -41,7 +43,22 @@ class ViewController: UIViewController {
     
     headerLabel.attributedText = myMutableString
     
-    secondarySelect.alpha = 1.0
+    secondarySelect.alpha = 0.0
+    
+    primarySelect.data = Repository.shared.primaryOption
+    primarySelect.onDataSelect = { command in
+      
+      self.secondarySelect.alpha = 1.0
+      self.secondarySelect.data = Repository.shared.secondaryOptions[command.value]!
+      
+    }
+    
+    secondarySelect.onDataSelect = { command in
+      
+      self.usageInfo.infoText = command.usage ?? ""
+      self.noteInfo.infoText = command.nb ?? ""
+      
+    }
     
   }
 
