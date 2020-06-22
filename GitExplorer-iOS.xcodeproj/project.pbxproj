@@ -16,6 +16,7 @@
 		894FB0A0249EF5F0008A0D83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 894FB09E249EF5F0008A0D83 /* LaunchScreen.storyboard */; };
 		894FB0A9249F04F3008A0D83 /* ZHSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FB0A8249F04F3008A0D83 /* ZHSelectView.swift */; };
 		89562E6124A040EE002F9785 /* ZHColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89562E6024A040EE002F9785 /* ZHColor.swift */; };
+		89562E6324A05B7C002F9785 /* ZHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89562E6224A05B7C002F9785 /* ZHTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		894FB0A1249EF5F0008A0D83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		894FB0A8249F04F3008A0D83 /* ZHSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHSelectView.swift; sourceTree = "<group>"; };
 		89562E6024A040EE002F9785 /* ZHColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHColor.swift; sourceTree = "<group>"; };
+		89562E6224A05B7C002F9785 /* ZHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				894FB0A8249F04F3008A0D83 /* ZHSelectView.swift */,
 				890B0500249FA1A400F8EF5D /* ZHInfoView.swift */,
 				89562E6024A040EE002F9785 /* ZHColor.swift */,
+				89562E6224A05B7C002F9785 /* ZHTextField.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				894FB098249EF5EE008A0D83 /* ViewController.swift in Sources */,
+				89562E6324A05B7C002F9785 /* ZHTextField.swift in Sources */,
 				894FB094249EF5EE008A0D83 /* AppDelegate.swift in Sources */,
 				894FB0A9249F04F3008A0D83 /* ZHSelectView.swift in Sources */,
 				89562E6124A040EE002F9785 /* ZHColor.swift in Sources */,

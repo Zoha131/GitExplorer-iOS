@@ -12,9 +12,21 @@ import UIKit
 class ZHSelectView: UIView {
   
   let imageView = UIImageView()
-  let labelView = UILabel()
+  let labelView = ZHTextField()
   
-  @IBInspectable var labelTxt: String = "" {
+  var data: [String] = [] {
+    didSet {
+      labelView.data = data
+    }
+  }
+  
+  var onDataSelect: (String) -> Void = {_ in } {
+    didSet {
+      labelView.onDataSelect = onDataSelect
+    }
+  }
+  
+  @IBInspectable var labelTxt: String = "Hello" {
     didSet {
       labelView.text = labelTxt
     }
@@ -39,8 +51,6 @@ class ZHSelectView: UIView {
     addSubview(labelView)
     
     imageView.image = UIImage(systemName: "arrowtriangle.down")
-    
-    labelView.textColor = secondaryColor
     
     labelView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     labelView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
@@ -78,6 +88,8 @@ class ZHSelectView: UIView {
   }
   
   override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    labelView.becomeFirstResponder()
+    
     DispatchQueue.main.async {
       self.layer.shadowOpacity = 0.0
       self.alpha = 0.7

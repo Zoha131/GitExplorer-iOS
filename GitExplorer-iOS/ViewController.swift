@@ -41,12 +41,9 @@ class ViewController: UIViewController {
     
     headerLabel.attributedText = myMutableString
     
-    secondarySelect.alpha = 0.0
-    
-    
+    secondarySelect.alpha = 1.0
     
   }
-
 
 }
 
