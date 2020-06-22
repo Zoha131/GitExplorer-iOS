@@ -10,8 +10,16 @@ import UIKit
 
 class ZHTextField: UITextField {
   
-  var data: [Command] = []
+  
+  var isFirstSet = false
+  let picker = UIPickerView()
   var onDataSelect: (Command) -> Void = {value in  print(value)}
+  var data: [Command] = [] {
+    didSet{
+      self.isFirstSet = true
+      picker.selectRow(0, inComponent: 0, animated: false)
+    }
+  }
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
@@ -33,7 +41,6 @@ class ZHTextField: UITextField {
   }
   
   func setupPicker() {
-    let picker = UIPickerView()
     picker.delegate = self
     picker.dataSource = self
     
@@ -50,6 +57,14 @@ class ZHTextField: UITextField {
   }
   
   @objc func dismissKeyboard() {
+    
+    if isFirstSet {
+      let first = data.first!
+      onDataSelect(first)
+      text = first.label
+    }
+    
+    isFirstSet = false
     resignFirstResponder()
   }
   
@@ -71,6 +86,7 @@ extension ZHTextField: UIPickerViewDelegate, UIPickerViewDataSource {
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     text = data[row].label
     onDataSelect(data[row])
+    isFirstSet = false
   }
   
   func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
