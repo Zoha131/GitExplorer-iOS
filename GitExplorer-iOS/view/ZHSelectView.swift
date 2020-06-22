@@ -14,13 +14,13 @@ class ZHSelectView: UIView {
   let imageView = UIImageView()
   let labelView = ZHTextField()
   
-  var data: [String] = [] {
+  var data: [Command] = [] {
     didSet {
       labelView.data = data
     }
   }
   
-  var onDataSelect: (String) -> Void = {_ in } {
+  var onDataSelect: (Command) -> Void = {_ in } {
     didSet {
       labelView.onDataSelect = onDataSelect
     }
@@ -54,13 +54,13 @@ class ZHSelectView: UIView {
     
     labelView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     labelView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15).isActive = true
-    labelView.trailingAnchor.constraint(equalTo: imageView.leadingAnchor, constant: 10).isActive = true
+    labelView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -30).isActive = true
     
     imageView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10).isActive = true
     imageView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     imageView.tintColor = .systemGray
-    imageView.heightAnchor.constraint(equalToConstant: 24).isActive = true
-    imageView.widthAnchor.constraint(equalToConstant: 24).isActive = true
+    imageView.heightAnchor.constraint(equalToConstant: 16).isActive = true
+    imageView.widthAnchor.constraint(equalToConstant: 16).isActive = true
     
     backgroundColor = .systemGray6
     layer.cornerRadius = 8

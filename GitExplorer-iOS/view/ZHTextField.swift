@@ -10,16 +10,8 @@ import UIKit
 
 class ZHTextField: UITextField {
   
-  var data: [String] = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Sunday",
-    "Monday",
-    "Sunday",
-    "Monday",
-  ]
-  var onDataSelect: (String) -> Void = {value in  print(value)}
+  var data: [Command] = []
+  var onDataSelect: (Command) -> Void = {value in  print(value)}
   
   required init?(coder: NSCoder) {
     super.init(coder: coder)
@@ -34,11 +26,10 @@ class ZHTextField: UITextField {
   }
   
   func setup(){
-    
     textColor = secondaryColor
     tintColor = UIColor.clear
-    text = "Trial ehhlo"
-    
+    clipsToBounds = true
+    font = font?.withSize(14)
   }
   
   func setupPicker() {
@@ -66,7 +57,7 @@ class ZHTextField: UITextField {
 
 extension ZHTextField: UIPickerViewDelegate, UIPickerViewDataSource {
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
-      return 1
+    return 1
   }
   
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -74,11 +65,37 @@ extension ZHTextField: UIPickerViewDelegate, UIPickerViewDataSource {
   }
   
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-      return data[row]
+    return data[row].label
   }
   
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    text = data[row].label
     onDataSelect(data[row])
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
+    return 40.0
+  }
+  
+  func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    let label: UILabel
+    
+    if let view = view {
+      label = view as! UILabel
+    }
+    else {
+      label = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.width-10, height: 400))
+    }
+    
+    label.text = data[row].label
+    label.lineBreakMode = .byWordWrapping
+    label.numberOfLines = 0
+    label.textAlignment = .center
+    label.minimumScaleFactor = 0.5
+    label.adjustsFontSizeToFitWidth = true
+    label.sizeToFit()
+    
+    return label
   }
 }
 

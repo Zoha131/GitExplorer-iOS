@@ -47,14 +47,15 @@ class ZHInfoView: UIView {
     leftView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     
     
-    labelView.leadingAnchor.constraint(equalTo: leftView.leadingAnchor, constant: 15).isActive = true
-    labelView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
+    labelView.leadingAnchor.constraint(equalTo: leftView.leadingAnchor, constant: 20).isActive = true
+    labelView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
     labelView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     
-    self.heightAnchor.constraint(greaterThanOrEqualTo: labelView.heightAnchor, constant: 10).isActive = true
+    self.heightAnchor.constraint(greaterThanOrEqualTo: labelView.heightAnchor, constant: 30).isActive = true
     
-    labelView.numberOfLines = 10
+    labelView.numberOfLines = 3
     labelView.textColor = .white
+    labelView.font = labelView.font.withSize(14)
     
     leftView.backgroundColor = primaryColor
     
