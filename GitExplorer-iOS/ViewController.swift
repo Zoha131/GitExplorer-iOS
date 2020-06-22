@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var secondarySelect: ZHSelectView!
   @IBOutlet weak var usageInfo: ZHInfoView!
   @IBOutlet weak var noteInfo: ZHInfoView!
+  @IBOutlet weak var titleLabel: UIView!
   
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -47,11 +47,11 @@ class ZHInfoView: UIView {
     leftView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     
     
-    labelView.leadingAnchor.constraint(equalTo: leftView.leadingAnchor, constant: 20).isActive = true
-    labelView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20).isActive = true
+    labelView.leadingAnchor.constraint(equalTo: leftView.leadingAnchor, constant: 15).isActive = true
+    labelView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -15).isActive = true
     labelView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
     
-    self.heightAnchor.constraint(greaterThanOrEqualTo: labelView.heightAnchor, constant: 40).isActive = true
+    self.heightAnchor.constraint(greaterThanOrEqualTo: labelView.heightAnchor, constant: 10).isActive = true
     
     labelView.numberOfLines = 10
     labelView.textColor = .white
@@ -65,7 +65,7 @@ class ZHInfoView: UIView {
   }
   
   override var intrinsicContentSize: CGSize {
-    return CGSize(width: bounds.width, height: 50)
+    return CGSize(width: bounds.width, height: 40)
   }
   
 }

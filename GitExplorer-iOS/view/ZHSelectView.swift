@@ -65,7 +65,7 @@ class ZHSelectView: UIView {
   }
   
   override var intrinsicContentSize: CGSize {
-    return CGSize(width: bounds.width, height: 50)
+    return CGSize(width: bounds.width, height: 40)
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
