@@ -181,7 +181,8 @@
       },
       {
         "value": "logs",
-        "label": "commit logs/history"
+        "label": "commit logs/history",
+        "usage": "git log"
       },
       {
         "value": "uncommittedChanges",
@@ -223,7 +224,8 @@
       },
       {
         "value": "delete-multiple-branches",
-        "label": "multiple branches"
+        "label": "multiple branches",
+        "usage": "git branch -D <branch name> <branch name> ..."
       },
       {
         "value": "tag",
@@ -330,7 +332,9 @@
       },
       {
         "value": "add-new-branch",
-        "label": "a new branch"
+        "label": "a new branch",
+        "usage": "git branch <new-branch>",
+        "nb": "To create a new branch that is based on your currently checked out (HEAD) branch"
       },
       {
         "value": "add-repo",
@@ -364,7 +368,8 @@
     "rename": [
       {
         "value": "branch",
-        "label": "branch"
+        "label": "branch",
+        "usage": "git branch -m <oldname> <newname>"
       },
       {
         "value": "file",
@@ -485,7 +490,8 @@
       },
       {
         "value": "apply-stash",
-        "label": "apply"
+        "label": "apply",
+        "usage": "git stash apply \"stash@{n}\""
       },
       {
         "value": "show",
@@ -495,7 +501,8 @@
       },
       {
         "value": "delete-stash",
-        "label": "delete"
+        "label": "delete",
+        "usage": "git stash drop \"stash@{n}\""
       },
       {
         "value": "create-branch",
