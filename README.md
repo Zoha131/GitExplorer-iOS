@@ -20,6 +20,14 @@ This app contains the most used git commands. You can find them pretty easily wi
 - View the usage of the git command.
 - View the short description of that git command.
 
+## Concept, I have learned by doing this project
+- Auto Layout
+- Custom Compund UIView
+- UIPickerView
+- JSONSerialization
+- NSArray, NSDictionary
+- UITextField, .inputView, .inputAccessoryView
+
 ## 📸 Screenshots
 
 <img src="./doc/app_profile.png" alt="Git Explorer iOS">
@@ -29,6 +37,12 @@ This app contains the most used git commands. You can find them pretty easily wi
 This project is inspired from GitExplorer-Android ~ Thanks to him.
 
   [GitExplorer-Android](https://github.com/Shashank02051997/GitExplorer-Android)
+
+## Speacial Thanks To
+- The Amighty Allah
+- [raywenderlich.com](https://www.raywenderlich.com/) for the amazing **RW Community Care!**
+- All the mentors of **RW Bootcamp**
+- All the fellow students of **RW Bootcamp**
 
 ## Contributing
 
