@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		890B0500249FA1A400F8EF5D /* ZHInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHInfoView.swift; sourceTree = "<group>"; };
-		894FB090249EF5EE008A0D83 /* GitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		894FB090249EF5EE008A0D83 /* Git Explorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git Explorer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		894FB093249EF5EE008A0D83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		894FB095249EF5EE008A0D83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		894FB097249EF5EE008A0D83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		894FB091249EF5EE008A0D83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				894FB090249EF5EE008A0D83 /* GitExplorer.app */,
+				894FB090249EF5EE008A0D83 /* Git Explorer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			);
 			name = "GitExplorer-iOS";
 			productName = "GitExplorer-iOS";
-			productReference = 894FB090249EF5EE008A0D83 /* GitExplorer.app */;
+			productReference = 894FB090249EF5EE008A0D83 /* Git Explorer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -332,7 +332,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zoha131.GitExplorer-iOS";
-				PRODUCT_NAME = GitExplorer;
+				PRODUCT_NAME = "Git Explorer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zoha131.GitExplorer-iOS";
-				PRODUCT_NAME = GitExplorer;
+				PRODUCT_NAME = "Git Explorer";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
