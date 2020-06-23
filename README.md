@@ -15,7 +15,7 @@
 This app contains the most used git commands. You can find them pretty easily without banging on the Internet and Google.
 
 
-## Sailent Features:
+## App Features:
 - Search the git commands.
 - View the usage of the git command.
 - View the short description of that git command.
@@ -28,7 +28,7 @@ This app contains the most used git commands. You can find them pretty easily wi
 
 This project is inspired from GitExplorer-Android ~ Thanks to him.
 
-  [GitExplorer](https://github.com/Shashank02051997/GitExplorer-Android)
+  [GitExplorer-Android](https://github.com/Shashank02051997/GitExplorer-Android)
 
 ## Contributing
 
