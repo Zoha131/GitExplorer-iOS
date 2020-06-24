@@ -78,11 +78,7 @@ extension ZHTextField: UIPickerViewDelegate, UIPickerViewDataSource {
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return data.count
   }
-  
-  func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    return data[row].label
-  }
-  
+
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     text = data[row].label
     onDataSelect(data[row])
@@ -103,7 +99,9 @@ extension ZHTextField: UIPickerViewDelegate, UIPickerViewDataSource {
       label = UILabel(frame: CGRect(x: 0, y: 0, width: pickerView.frame.width-10, height: 400))
     }
     
-    label.text = data[row].label
+    // When User changes the picker fast then
+    // sometimes this give Index out of range fatal error
+    label.text = data.count > row ? data[row].label : "You're too fast!"
     label.lineBreakMode = .byWordWrapping
     label.numberOfLines = 0
     label.textAlignment = .center
