@@ -20,6 +20,13 @@ This app contains the most used git commands. You can find them pretty easily wi
 - View the usage of the git command.
 - View the short description of that git command.
 
+## To Do List
+- [ ] Dark Mode
+- [ ] Online Doc Link
+- [ ] Scrolling in portrait
+- [ ] Only Usage and Note part scrolling in landscape
+- [ ] More git command
+
 ## Concept, I have learned by doing this project
 - Auto Layout
 - Custom Compund UIView
