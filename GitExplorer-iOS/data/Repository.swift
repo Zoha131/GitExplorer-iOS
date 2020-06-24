@@ -10,12 +10,12 @@ import Foundation
 
 class Repository {
   static let shared = Repository()
-  private init() { }
+  private init() { generateData() }
   
   private(set) var primaryOption: [Command] = []
   private(set) var secondaryOptions: [String: [Command]] = [:]
   
-  func generateData() {
+  private func generateData() {
     
     if let filePath = Bundle.main.path(forResource: "Data", ofType: "json") {
       let fileURL = URL(fileURLWithPath: filePath)

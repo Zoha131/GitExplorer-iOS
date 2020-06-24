@@ -22,8 +22,6 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     
-    Repository.shared.generateData()
-    
     inputStack.setCustomSpacing(30, after: subHeaderLabel)
     infoStack.setCustomSpacing(20, after: usageInfo)
     
