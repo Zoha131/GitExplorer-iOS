@@ -44,8 +44,7 @@ class ZHTextField: UITextField {
     picker.delegate = self
     picker.dataSource = self
     
-    let toolbar = UIToolbar()
-    toolbar.sizeToFit()
+    let toolbar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: 44.0))
     
     let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(ZHTextField.dismissKeyboard))
     
