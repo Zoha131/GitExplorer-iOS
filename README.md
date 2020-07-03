@@ -15,15 +15,15 @@
 This app contains the most used git commands. You can find them pretty easily without banging on the Internet and Google.
 
 
+## 📸 Screenshots
+
+<img src="./doc/app_profile.png" alt="Git Explorer iOS">
+
+
 ## App Features:
 - Search the git commands.
 - View the usage of the git command.
 - View the short description of that git command.
-
-## App Review:
-This app has been reviewed by [@marinbenc](https://twitter.com/marinbenc) and [@Adam9Rush](https://twitter.com/adam9rush). Click on the image to watch the review.
-
-[![Watch the video](./doc/review.png)](https://youtu.be/vt5fpE0bzSY)
 
 
 ## To Do List
@@ -42,9 +42,11 @@ This app has been reviewed by [@marinbenc](https://twitter.com/marinbenc) and [@
 - NSArray, NSDictionary
 - UITextField, .inputView, .inputAccessoryView
 
-## 📸 Screenshots
 
-<img src="./doc/app_profile.png" alt="Git Explorer iOS">
+## App Review:
+This app has been reviewed by [@marinbenc](https://twitter.com/marinbenc) and [@Adam9Rush](https://twitter.com/adam9rush). Click on the image to watch the review.
+
+[![Watch the video](./doc/review.png)](https://www.raywenderlich.com/10527046-review-my-stuff/lessons/8)
 
 ## Inspiration
 
