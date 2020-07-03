@@ -20,12 +20,19 @@ This app contains the most used git commands. You can find them pretty easily wi
 - View the usage of the git command.
 - View the short description of that git command.
 
+## App Review:
+This app has been reviewed by [@marinbenc](https://twitter.com/marinbenc) and [@Adam9Rush](https://twitter.com/adam9rush). Click on the image to watch the review.
+
+[![Watch the video](./doc/review.png)](https://youtu.be/vt5fpE0bzSY)
+
+
 ## To Do List
 - [ ] Dark Mode
 - [ ] Online Doc Link
 - [ ] Scrolling in portrait
 - [ ] Only Usage and Note part scrolling in landscape
 - [ ] More git command
+- [ ] Testing
 
 ## Concept, I have learned by doing this project
 - Auto Layout
