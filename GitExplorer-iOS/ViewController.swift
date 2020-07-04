@@ -45,7 +45,16 @@ class ViewController: UIViewController {
     
     primarySelect.data = Repository.shared.primaryOption
     primarySelect.onDataSelect = { command in
-      
+      /****when you reselect first item, maybe previous search results in "Usage" and "note"
+         boxes should be cleared and second pull down menu? under "I want to" could reflect the change
+        changes of options dependent on the first pull down menu
+         This way you won't have an option of for example, " I want to clone  - a new branch"
+         ****/
+        
+        self.secondarySelect.labelTxt = ""
+        self.usageInfo.infoText = ""
+        self.noteInfo.infoText = ""
+       //
       self.secondarySelect.alpha = 1.0
       self.secondarySelect.data = Repository.shared.secondaryOptions[command.value]!
       
