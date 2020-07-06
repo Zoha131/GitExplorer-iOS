@@ -7,7 +7,7 @@
 <a href="https://www.linkedin.com/in/zoha131/">
     <img src="https://img.shields.io/badge/Support-Recommed%2FEndorse%20me%20on%20Linkedin-yellow?style=for-the-badge&logo=linkedin" alt="Recommend me on LinkedIn" /></a>
 
-
+**this is an awesome app. Sorry I'm practicing 
 **Git Explorer** is a simple iOS application to search git command on one click. Dedicated to all Software Developers with ❤️.
 
 
